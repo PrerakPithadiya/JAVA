@@ -1,6 +1,8 @@
 package Functions;
 
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Print_Prime_Numbers_In_Given_Range {
     public static void main(String[] args) {
@@ -10,17 +12,17 @@ public class Print_Prime_Numbers_In_Given_Range {
         System.out.print("Enter the Ending Range : ");
         int end = sc.nextInt();
         System.out.println("Prime Numbers from " + start + " to " + end + " are : ");
-        printPrimes(start, end);
+        System.out.println(printPrimes(start, end));
     }
 
-    public static void printPrimes(int start, int end) {
-        System.out.print("[  ");
+    public static List<Integer> printPrimes(int start, int end) {
+        List<Integer> primes = new ArrayList<>();
         for (int n = start; n <= end; n++) {
             if (isPrime(n)) {
-                System.out.print(n + "  ");
+                primes.add(n);
             }
         }
-        System.out.println("]");
+        return primes;
     }
 
     public static boolean isPrime(int n) {
