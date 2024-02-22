@@ -13,7 +13,7 @@ public class Decimal_To_Octal {
         int pow = 0, octNum = 0;
         while (decNum != 0) {
             int r = decNum % 8;
-            octNum += (r * Math.pow(10, pow++));
+            octNum += (int) (r * Math.pow(10, pow++));
             decNum /= 8;
         }
         return octNum;
