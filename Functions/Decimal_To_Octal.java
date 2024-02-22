@@ -8,7 +8,7 @@ public class Decimal_To_Octal {
         int n = sc.nextInt();
         int octNum = toOctal(n);
         System.out.println("Octal Number is : " + octNum);
-    }l
+    }
 
     public static int toOctal(int decNum) {
         int pow = 0, octNum = 0;
