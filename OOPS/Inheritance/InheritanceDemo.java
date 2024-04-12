@@ -27,3 +27,11 @@ public class InheritanceDemo {
         System.out.println("Child variable: " + child.childVariable);
     }
 }
+
+// Explanation
+
+// - We have a `Parent` class with a constructor that initializes an instance variable.
+// - The `Child` class extends `Parent` and adds its instance variable.
+// - The `Child` constructor uses `super()` to call the constructor of the `Parent` class and `this()` to initialize its instance variable.
+// - In the `main` method, we create an object of `Child`, which triggers the constructors of both classes.
+// - Output displays the values of both parent and child variables.
