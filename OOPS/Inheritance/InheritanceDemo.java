@@ -28,7 +28,7 @@ public class InheritanceDemo {
     }
 }
 
-// Explanation
+// Short Explanation
 
 // - We have a `Parent` class with a constructor that initializes an instance variable.
 // - The `Child` class extends `Parent` and adds its instance variable.
