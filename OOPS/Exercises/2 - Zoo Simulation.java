@@ -1,11 +1,11 @@
 package OOPS.Exercises;
 
-class AnimalSoundDemo {
+class ZooSimulation {
     static class Animal {
         protected String sound;
 
         public Animal() {
-            this.sound = "Generic animal sound";
+            this.sound = "Animal sound";
         }
 
         public void makeSound() {
@@ -25,19 +25,25 @@ class AnimalSoundDemo {
         }
     }
 
-    static class Cow extends Animal {
-        public Cow() {
-            this.sound = "Moo";
+    static class Zoo {
+        private Animal[] animals;
+
+        public Zoo() {
+            animals = new Animal[3];
+            animals[0] = new Dog();
+            animals[1] = new Cat();
+            animals[2] = new Animal();
+        }
+
+        public void makeSounds() {
+            for (Animal animal : animals) {
+                animal.makeSound();
+            }
         }
     }
 
     public static void main(String[] args) {
-        Animal animal1 = new Dog();
-        Animal animal2 = new Cat();
-        Animal animal3 = new Cow();
-
-        animal1.makeSound();
-        animal2.makeSound();
-        animal3.makeSound();
+        Zoo zoo = new Zoo();
+        zoo.makeSounds();
     }
 }
