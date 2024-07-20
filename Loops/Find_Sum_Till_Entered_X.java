@@ -15,5 +15,7 @@ public class Find_Sum_Till_Entered_X {
             ch = sc.next().trim().charAt(0);
         } while (ch != 'x');
         System.out.println("\nSum of All Numbers is = " + sum);
+
+        sc.close();
     }
 }
