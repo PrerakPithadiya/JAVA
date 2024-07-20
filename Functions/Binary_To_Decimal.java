@@ -9,6 +9,7 @@ public class Binary_To_Decimal {
         int n = sc.nextInt();
         int decNum = convertToDecimal(n);
         System.out.println("Decimal of " + n + " is : " + decNum);
+        sc.close();
     }
 
     public static int convertToDecimal(int binNum) {

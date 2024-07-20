@@ -10,6 +10,7 @@ public class Binomial_Coefficient {
         int binCoeff = calculateBinomialCoefficient(n, r);
         System.out.print("The Binomial Coefficient is : ");
         System.out.println(binCoeff);
+        sc.close();
     }
 
     public static int calculateBinomialCoefficient(int n, int r) {

@@ -11,6 +11,7 @@ public class HCF_Of_Two_Numbers {
         int b = sc.nextInt();
         int hCF = calculateHCF(a, b);
         System.out.println("The HCF of " + a + " & " + b + " is : " + hCF);
+        sc.close();
     }
 
     public static int calculateHCF(int a, int b) {

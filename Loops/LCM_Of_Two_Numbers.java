@@ -11,6 +11,7 @@ public class LCM_Of_Two_Numbers {
         int b = sc.nextInt();
         int lCM = calculateLCM(a, b);
         System.out.println("The LCM of " + a + " & " + b + " is : " + lCM);
+        sc.close();
     }
 
     public static int calculateLCM(int a, int b) {
