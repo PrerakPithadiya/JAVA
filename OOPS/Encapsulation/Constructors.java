@@ -27,5 +27,6 @@ public class Constructors {
         Student obj = new Student(sc.nextLine(), sc.nextInt());
         System.out.println("Name : " + obj.getName());
         System.out.println("Age : " + obj.getAge());
+        sc.close();
     }
 }
