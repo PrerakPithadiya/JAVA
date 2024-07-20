@@ -1,3 +1,5 @@
+package Functions;
+
 import java.util.Scanner;
 
 public class Binomial_Coefficient {
