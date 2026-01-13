@@ -13,6 +13,6 @@ public class Divisible_With_Five{
         System.out.println("Result : The given number " + result + " divisible with '5'.");
     }
     public static boolean isDivisible(int n){
-        return (n % 5 == 0) ? true : false;
+        return (n % 5 == 0);
     }
 }
